@@ -2,7 +2,7 @@
 
 A repo to help you learn Git! Follow the instructions below to learn how to use git and submit your first code change!
 
-**TODO** Dakota to expand this guide...
+**TODO** [@dcc341](https://github.uwhealth.wisc.edu/dcc341) to expand this guide...
 
 1. Check out this repository to your local machine.
 2. Create a new branch.
