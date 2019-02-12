@@ -12,6 +12,13 @@ A repo to help you learn Git! Follow the instructions below to learn how to use 
 6. Submit a pull request to merge your branch into `master`.
 7. Once your change has been merged into `master` branch - delete your `feature` branch.
 
+## Contents
+0. [Get an Account in GitHub and Configure Git Locally](#github-and-git-configuration)
+1. [Copy this Repository to your Local Machine](#copy-this-repo)
+
+## GitHub and Git Configuration
+
+## Copy this Repo
 
 ## Sign your name here:
 *
