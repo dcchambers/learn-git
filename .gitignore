@@ -1,0 +1,13 @@
+# This is a "gitignore" file - it tells Git which files don't need to
+# be tracked in version control. For this project, we will ignore
+# everything except for 2 files (.gitignore and README.md).
+#
+# This way, if anyone accidentally adds a file (hidden or regular) to
+# the directory that contains this git repo, it won't add it to git.
+
+# Ignore everything
+*
+
+# Except for these files:
+!.gitignore
+!README.md
