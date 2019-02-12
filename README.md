@@ -4,21 +4,34 @@ A repo to help you learn Git! Follow the instructions below to learn how to use 
 
 **TODO** [@dcc341](https://github.uwhealth.wisc.edu/dcc341) to expand this guide...
 
-1. Check out this repository to your local machine.
-2. Create a new branch.
-3. Add your name to the bottom of this file.
-4. Commit the file.
-5. Push your branch with your change(s) to GitHub.
-6. Submit a pull request to merge your branch into `master`.
-7. Once your change has been merged into `master` branch - delete your `feature` branch.
-
 ## Contents
-0. [Get an Account in GitHub and Configure Git Locally](#github-and-git-configuration)
-1. [Copy this Repository to your Local Machine](#copy-this-repo)
+0. [Configure GitHub and Git](#github-and-git-configuration)
+1. [Copy this Repository to your Local Machine](#check-out-this-repo)
+2. [Create a Branch](#create-a-new-branch)
+3. [Sign the README](#sign-the-readme-document)
+4. [Commit your Changes](#commit-your-changes)
+5. [Push Changes to GitHub](#push-your-changes-to-github)
+6. [Submit a Pull Request to Publish your Changes](#submit-a-pull-request)
+7. [Clean Up Local Git Repository](#clean-up-local-git-repository)
+8. [Signatures](#signatures)
+
 
 ## GitHub and Git Configuration
 
-## Copy this Repo
+## Check Out This Repo
 
-## Sign your name here:
-*
+## Create a New Branch
+
+## Sign the README Document
+
+## Commit your Changes
+
+## Push your Changes to GitHub
+
+## Submit a Pull Request
+
+## Clean Up Local Git Repository
+
+## Signatures
+* Dakota Chambers
+
