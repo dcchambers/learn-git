@@ -33,5 +33,8 @@ A repo to help you learn Git! Follow the instructions below to learn how to use 
 ## Clean Up Local Git Repository
 
 ## Signatures
+
+Edit this file and add your name below to show that you have completed the tutorial.
+
 * Dakota Chambers
 
