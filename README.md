@@ -1,6 +1,7 @@
 # Learn Git and GitHub!
 
-A repo to help you learn Git! Follow the instructions below to learn how to use git and submit your first code change!
+A repo to help you learn Git! Follow the instructions below to learn how to use
+git and submit your first code change!
 
 **TODO** [@dcc341](https://github.uwhealth.wisc.edu/dcc341) to expand this guide...
 
@@ -17,6 +18,20 @@ A repo to help you learn Git! Follow the instructions below to learn how to use 
 
 
 ## GitHub and Git Configuration
+
+Before you begin, you'll want to make sure your GitHub Account is set up
+and configure Git (the software) on your local machine.
+
+:warning: **GitHub =/= Git** :warning:
+* Git is version control software. It's open-source and competely free.
+* GitHub is a private company that provides both *remote* git repository hosting
+and a community focused on development and open-source technologies. GitHub is
+just one of several popular options for hosting remote git repositories.
+
+### Set up your Account on GitHub
+
+### Install and Configure Git Locally
+
 
 ## Check Out This Repo
 
