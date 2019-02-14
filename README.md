@@ -3,11 +3,17 @@
 A tutorial to help you learn Git! Follow the instructions below to learn how to
 use git and submit your first code change!
 
-This tutorial gives instructions on how to configure and use Git with both 
+:bulb: **Notes**
+* This tutorial gives instructions on how to configure and use Git with both 
 Linux-based machines and Windows machines. Mac users can typically follow the
 Linux instructions.
+* A `$` in this tutorial indicates a command you should enter in a terminal/command line.
+* Is Git already on my system?
+  * Git is included with virtually all Linux distributions.
+  * Git is included with MacOS, but you may need to install/enable command line tools.
+    * Enter the command `$ xcode-select --install` in the terminal to do this.
+  * Git is not included with Windows - but there are several ways to easily install it.
 
-Git is included by default on most Linux distributions. For Mac, y
 
 **TODO** [@dcc341](https://github.uwhealth.wisc.edu/dcc341) to expand this guide...
 
@@ -20,7 +26,8 @@ Git is included by default on most Linux distributions. For Mac, y
 5. [Push Changes to GitHub](#push-your-changes-to-github)
 6. [Submit a Pull Request to Publish your Changes](#submit-a-pull-request)
 7. [Clean Up Local Git Repository](#clean-up-local-git-repository)
-8. [Signatures](#signatures)
+8. [Additional Resources](#additional-resources)
+9. [Signatures](#signatures)
 
 
 ## GitHub and Git Configuration
@@ -41,7 +48,13 @@ just one of several popular options for hosting remote git repositories.
 
 ### Install and Configure Git Locally
 
-#### Linux/Mac
+#### Linux
+
+* Git in included in most Linux distributions by default. Enter the command
+`$ which git` to find out if and where you have the binary installed.
+* You'll need to configure your name and email.
+  * `$ git config --global user.name "John Doe"`
+  * `$ git config --global user.email johndoe@example.com`
 
 #### Windows
 
@@ -79,6 +92,15 @@ to add the SSH **public** key (id_rsa.pub) to your GitHub account.
 ## Submit a Pull Request
 
 ## Clean Up Local Git Repository
+
+## Additional Resources
+
+* [git-scm.com](https://git-scm.com/doc) - The official Git documentation is
+  *really* good. Full of examples and verbose/technical without being over-bearing.
+* [GitHub Help](https://help.github.com/) - The official help page from GitHub.
+* [Git 101 - Chambers.io](http://chambers.io/2018/04/07/git-week.html) - Shameless
+  self plug. I wrote some stuff about how to use Git and how it works under the hood.
+
 
 ## Signatures
 
