@@ -95,9 +95,9 @@ to add the SSH **public** key (id_rsa.pub) to your GitHub account.
 
 ## Additional Resources
 
-* [git-scm.com](https://git-scm.com/doc) - The official Git documentation is
+* [Git Documentation - git-scm.com](https://git-scm.com/doc) - The official Git documentation is
   *really* good. Full of examples and verbose/technical without being over-bearing.
-* [GitHub Help](https://help.github.com/) - The official help page from GitHub.
+* [GitHub Help - github.com](https://help.github.com/) - The official help page from GitHub.
 * [Git 101 - Chambers.io](http://chambers.io/2018/04/07/git-week.html) - Shameless
   self plug. I wrote some stuff about how to use Git and how it works under the hood.
 
