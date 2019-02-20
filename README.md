@@ -169,7 +169,7 @@ Branch add-dakotachambers-signature set up to track remote branch add-dakotacham
 
 * Add your updated file to be tracked by Git:
   * `~/Development/learn-git $ git add .`
-    * By specifying `add .` - you are adding any new, deleted, or altered file at the current directory. You could also use `git add signatures.md` to be more verbose.
+    * By specifying `add .` - you are recursively adding any new, deleted, or altered file at the current directory and all subdirectories, minus what the `.gitignore` file tells Git to ignore. You could also use `git add signatures.md` to be more verbose.
   * This **stages** the file and prepares it for commiting. It tells git you want to include the changes.
 * Use the `commit` command to formally record the changes in the git repository.
   * `~/Development/learn-git $ git commit`
