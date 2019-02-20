@@ -23,7 +23,7 @@ Linux instructions.
 0. [Configure GitHub and Git](#github-and-git-configuration)
 1. [Copy this Repository to your Local Machine](#check-out-this-repo)
 2. [Create a Branch](#create-a-new-branch)
-3. [Sign the README](#sign-the-readme-document)
+3. [Sign the signatures.md document](#sign-the-readme-document)
 4. [Commit your Changes](#commit-your-changes)
 5. [Push Changes to GitHub](#push-your-changes-to-github)
 6. [Submit a Pull Request to Publish your Changes](#submit-a-pull-request)
@@ -79,6 +79,8 @@ to add the SSH **public** key (id_rsa.pub) to your GitHub account.
 
 #### Windows
 
+**TODO**
+
 ### Desktop/GUI Applications
 
 GitHub provides [a desktop app](https://desktop.github.com/) for Windows and Mac systems.
@@ -111,7 +113,7 @@ assets/ .gitignore README.md signatures.md
  
 ### Desktop App
 
-
+**TODO**
 
 ## Create a New Branch
 
@@ -145,11 +147,20 @@ Branch add-dakotachambers-signature set up to track remote branch add-dakotacham
 
 ### Desktop App
 
-## Sign the README Document
+**TODO**
 
-### Command Line
+## Sign the signatures.md Document
 
-### Desktop App
+* Add your signature to the bottom of the `signatures.md` document.
+* Nothing tricky about this step. A file that ends in `.md` is a *markdown* file - it's a plain text document that can do some fancy rendering (into HTML, PDF, e tc). Open and edit the file in your favorite text editor.
+  * Some suggestions:
+    * [Vim](https://www.vim.org/)
+    * [Atom](https://www.vim.org/)
+    * Notepad (Ships with Windows)
+    * [VS Code](https://code.visualstudio.com/)
+    * [Notepad++](https://notepad-plus-plus.org/)
+  * You do *not* want to open this in software like Office. You need to preserve the plain-text format.
+* From the command line, you can simply enter this command to add your name to the bottom: `$ echo "* john doe" >> signatures.md`
 
 ## Commit your Changes
 
