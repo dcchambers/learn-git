@@ -79,17 +79,45 @@ to add the SSH **public** key (id_rsa.pub) to your GitHub account.
 
 ## Check Out This Repo
 
+### Command Line
+
+### Desktop App
+
 ## Create a New Branch
+
+### Command Line
+
+### Desktop App
 
 ## Sign the README Document
 
+### Command Line
+
+### Desktop App
+
 ## Commit your Changes
+
+### Command Line
+
+### Desktop App
 
 ## Push your Changes to GitHub
 
+### Command Line
+
+### Desktop App
+
 ## Submit a Pull Request
 
+### Command Line
+
+### Desktop App
+
 ## Clean Up Local Git Repository
+
+### Command Line
+
+### Desktop App
 
 ## Additional Resources
 
