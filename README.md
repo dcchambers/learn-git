@@ -77,6 +77,15 @@ to add the SSH **public** key (id_rsa.pub) to your GitHub account.
 
 #### Windows
 
+### Desktop/GUI Applications
+
+GitHub provides [a desktop app](https://desktop.github.com/) for Windows and Mac systems.
+It is pretty good for working with repositories hosted on GitHub, but it is not the only desktop app available for working with Git.
+
+[Here's an extensive but non-exhaustive list](https://git-scm.com/download/guis) of desktop apps for working with Git.
+
+* This guide will include instructions for working with both the command line and with the GitHub desktop app.
+
 ## Check Out This Repo
 
 ### Command Line
