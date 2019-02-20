@@ -115,6 +115,8 @@ assets/ .gitignore README.md signatures.md
 
 ## Create a New Branch
 
+:question: Why create a new branch? After you clone the repo, you are probably on the default `master` branch. It's bad practice to commit changes directly to the`master` branch in a shared repository. It's better to create a `feature-branch` and safely make your changes there.
+
 ### Command Line
 * You can create a new branch with the `$ git branch <branch-name>` command and then switch to that branch with `$ git checkout <branch-name>`,
 or you can use this shortcut: `$ git checkout -b <branch-name>`
