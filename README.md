@@ -103,13 +103,21 @@ learn-git
 ```
 * Change to that directory.
 `~/Development $ cd learn-git`
+* That directory should contain the contents of this repo.
+```
+~/Development/learn-git $ ls -a
+assets/ .gitignore README.md signatures.md
+```
  
 ### Desktop App
+
+
 
 ## Create a New Branch
 
 ### Command Line
-
+* You can create a new branch with the `$ git branch <branch-name>` command and then switch to that branch with `$ git checkout <branch-name>`,
+or you can use this shortcut: `$ git checkout -b <branch-name>`
 ### Desktop App
 
 ## Sign the README Document
