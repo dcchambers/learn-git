@@ -160,31 +160,68 @@ Branch add-dakotachambers-signature set up to track remote branch add-dakotacham
     * [VS Code](https://code.visualstudio.com/)
     * [Notepad++](https://notepad-plus-plus.org/)
   * You do *not* want to open this in software like Office. You need to preserve the plain-text format.
-* From the command line, you can simply enter this command to add your name to the bottom: `$ echo "* john doe" >> signatures.md`
+* From the command line, you can simply enter this command to add your name to the bottom:
+  * `$ echo "* john doe" >> signatures.md`
 
 ## Commit your Changes
 
 ### Command Line
 
+* Add your updated file to be tracked by Git:
+  * `~/Development/learn-git $ git add .`
+    * By specifying `add .` - you are adding any new, deleted, or altered file at the current directory. You could also use `git add signatures.md` to be more verbose.
+  * This **stages** the file and prepares it for commiting. It tells git you want to include the changes.
+* Use the `commit` command to formally record the changes in the git repository.
+  * `~/Development/learn-git $ git commit`
+    * If you enter just this command, it will open a text editor (Your default editor, set by `$EDITOR` environment variable. For most people it will be Vim or Nano.
+    * You now have to enter a **commit message.**
+    * Using the editor that opened, enter a message about what you changed, eg: `Added my name to the signatures.md file` There is no need to delete the lines commented out with `#` - Git will ignore them. Save and close the file.
+  * You can shorthand this with: `$ git commit -m "Added my name to signatures.md"`
+
+Congratulations! Git has now recorded this change to the file(s). These changes still only exist on your local machine. Next step is pushing them to the remote repository (GitHub) so that other people can see your changes!
+
 ### Desktop App
+
+**TODO**
 
 ## Push your Changes to GitHub
 
 ### Command Line
 
+* Enter the command: ` $ git push origin <your-branch>`
+  * `<your-branch>` is the branch you created in Step 2.
+
 ### Desktop App
+
+**TODO**
 
 ## Submit a Pull Request
 
-### Command Line
+Congratulations! You should see your change live on GitHub on the branch you created. Almost done! The next step is to create a `pull request` to merge your changes into the `master` branch.
 
-### Desktop App
+**TODO - add images from GitHub**
+
+* Go to the [GitHub Repository](https://github.uwhealth.wisc.edu/serveradmins/learn-git) and click on the **Pull Requests** tab.
+* Select **New Pull Request**
+* Set the **base** branch as `master` - this is the branch that you are merging your changes *into*.
+* Set the **compare** branch as `<your-branch>` - this is the branch that already has changes in it you want to merge into the `master` branch.
+* Select **Create Pull Request**
+
+And you're done! At this point, the repository **maintainer** (For this repo, [Dakota](https://github.uwhealth.wisc.edu/dcc341)) will review your changes and **merge** your branch into the protected `master` branch.
 
 ## Clean Up Local Git Repository
 
+* Whenever you're ready (after your changes are approved and merged) you can clean up your local Git repository.
+
 ### Command Line
+* Check out the `master` branch: `$ git checkout master`
+* Pull the latest changes from GitHub: `$ git pull`
+* Delete the feature branch you created: `$git branch -d <your-branch>`
+  * This is optional, but recommended if you want to keep your Git repo "neat". Git won't lose track of that branch or what you did.
 
 ### Desktop App
+
+:sparkler: **Congratulations!** :sparkler: You've passed the Git 101 tutorial! You're well on your way to becoming a Git superstar.
 
 ## Additional Resources
 
@@ -193,3 +230,4 @@ Branch add-dakotachambers-signature set up to track remote branch add-dakotacham
 * [GitHub Help - github.com](https://help.github.com/) - The official help page from GitHub.
 * [Git 101 - Chambers.io](http://chambers.io/2018/04/07/git-week.html) - Shameless
   self plug. I wrote some stuff about how to use Git and how it works under the hood.
+* [Git Flight Rules](https://github.com/k88hudson/git-flight-rules) - A place to search for an exact command to enter based on your needs or problem.
