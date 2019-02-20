@@ -130,6 +130,17 @@ On branch add-dakotachambers-signature
 nothing to commit, working directory clean
 ```
 
+* :bulb: At this point, your branch lives **only on your local machine**. You need to push it to the remote repository on GitHub:
+```
+$ git push -u origin add-dakotachambers-signature
+...
+To git@github.uwhealth.wisc.edu:serveradmins/learn-git.git
+ * [new branch]      add-dakotachambers-signature -> add-dakotachambers-signature
+Branch add-dakotachambers-signature set up to track remote branch add-dakotachambers-signature from origin.
+```
+* You should now see the branch listed on GitHub:
+![](/assets/images/github_branch_example.png)
+
 ### Desktop App
 
 ## Sign the README Document
