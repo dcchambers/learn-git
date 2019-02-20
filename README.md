@@ -118,6 +118,18 @@ assets/ .gitignore README.md signatures.md
 ### Command Line
 * You can create a new branch with the `$ git branch <branch-name>` command and then switch to that branch with `$ git checkout <branch-name>`,
 or you can use this shortcut: `$ git checkout -b <branch-name>`
+  * Enter the command: `$ git checkout -b add-YOURFULLNAME-signature`
+    * Replace YOURFULLNAME with your first and last name. Mine would be "dakotachambers"
+    * For me the new branch name is now `add-dakotachambers-signature`
+* Use `$ git status` to confirm you're on the correct branch.
+```
+~/Development/learn-git $ git checkout -b add-dakotachambers-signature
+Switched to a new branch 'add-dakotachambers-signature'
+~/Development/learn-git $ git status
+On branch add-dakotachambers-signature
+nothing to commit, working directory clean
+```
+
 ### Desktop App
 
 ## Sign the README Document
