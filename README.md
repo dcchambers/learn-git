@@ -88,10 +88,22 @@ It is pretty good for working with repositories hosted on GitHub, but it is not 
 
 * This guide will include instructions for working with both the command line and with the GitHub desktop app.
 
-## Check Out This Repo
+## Clone This Repo
 
 ### Command Line
 
+* Change into the directory where you want to keep your repositories.
+`$ cd ~/Development`
+* Clone this repository.
+` ~/Development $ git clone git@github.uwhealth.wisc.edu:serveradmins/learn-git.git`
+* You should see Git download the repo and a subdirectory should be created.
+``` 
+~/Development $ ls
+learn-git
+```
+* Change to that directory.
+`~/Development $ cd learn-git`
+ 
 ### Desktop App
 
 ## Create a New Branch
