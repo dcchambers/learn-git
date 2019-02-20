@@ -27,8 +27,6 @@ Linux instructions.
 6. [Submit a Pull Request to Publish your Changes](#submit-a-pull-request)
 7. [Clean Up Local Git Repository](#clean-up-local-git-repository)
 8. [Additional Resources](#additional-resources)
-9. [Signatures](#signatures)
-
 
 ## GitHub and Git Configuration
 
@@ -100,11 +98,3 @@ to add the SSH **public** key (id_rsa.pub) to your GitHub account.
 * [GitHub Help - github.com](https://help.github.com/) - The official help page from GitHub.
 * [Git 101 - Chambers.io](http://chambers.io/2018/04/07/git-week.html) - Shameless
   self plug. I wrote some stuff about how to use Git and how it works under the hood.
-
-
-## Signatures
-
-Edit this file and add your name below to show that you have completed the tutorial.
-
-* Dakota Chambers
-
