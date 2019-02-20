@@ -3,6 +3,8 @@
 A tutorial to help you learn Git! Follow the instructions below to learn how to
 use git and submit your first code change!
 
+![](/assets/images/Git-Logo-2Color.png)
+
 :bulb: **Notes**
 * This tutorial gives instructions on how to configure and use Git with both 
 Linux-based machines and Windows machines. Mac users can typically follow the
