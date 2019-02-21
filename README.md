@@ -17,7 +17,7 @@ Linux instructions.
   * Git is not included with Windows - but there are several ways to easily install it.
 
 ## Contents
-0. [Configure GitHub and Git](#step_0_github-and-git-configuration)
+0. [Configure GitHub and Git](#step_0\:_github-and-git-configuration)
 1. [Copy this Repository to your Local Machine](#step_1:_check-out-this-repo)
 2. [Create a Branch](#step_2:_create-a-new-branch)
 3. [Sign the signatures.md document](#step_3:_sign-the-readme-document)
