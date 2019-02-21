@@ -6,7 +6,7 @@ use git and submit your first code change!
 ![](/assets/images/Git-Logo-2Color.png)
 
 :bulb: **Notes**
-* This tutorial gives instructions on how to configure and use Git with both 
+* This tutorial gives instructions on how to configure and use Git with both
 Linux-based machines and Windows machines. Mac users can typically follow the
 Linux instructions.
 * A `$` in this tutorial indicates a command you should enter in a terminal/command line.
@@ -15,9 +15,6 @@ Linux instructions.
   * Git is included with MacOS, but you may need to install/enable command line tools.
     * Enter the command `$ xcode-select --install` in the terminal to do this.
   * Git is not included with Windows - but there are several ways to easily install it.
-
-
-**TODO** [@dcc341](https://github.uwhealth.wisc.edu/dcc341) to expand this guide...
 
 ## Contents
 0. [Configure GitHub and Git](#github-and-git-configuration)
@@ -99,7 +96,7 @@ It is pretty good for working with repositories hosted on GitHub, but it is not 
 * Clone this repository.
 ` ~/Development $ git clone git@github.uwhealth.wisc.edu:serveradmins/learn-git.git`
 * You should see Git download the repo and a subdirectory should be created.
-``` 
+```
 ~/Development $ ls
 learn-git
 ```
@@ -110,10 +107,17 @@ learn-git
 ~/Development/learn-git $ ls -a
 assets/ .gitignore README.md signatures.md
 ```
- 
+
 ### Desktop App
 
-**TODO**
+* Open the GitHub Desktop App and go to File --> Clone Repository (CTRL + SHIFT + O)
+![](/assets/images/gh_desktop_clone_repo.png)
+* Click on the "Enterprise" tab and navigate to the `learn-git` repo.
+  * Enter the path on your local machine where you want the project saved. I would recommend not saving it on the hard drive itself and not on a network drive - you want to be able to use this offline!
+![](/assets/images/gh_desktop_clone_repo2.png)
+* You should see this as it clones the repo from GitHub to your local project directory.
+![](/assets/images/gh_desktop_clone_repo3.png)
+
 
 ## Create a New Branch
 
@@ -147,7 +151,14 @@ Branch add-dakotachambers-signature set up to track remote branch add-dakotacham
 
 ### Desktop App
 
-**TODO**
+* Click on the tab that says "Current Branch: Master":
+![](/assets/images/gh_desktop_branch1.png)
+* Click on "New Branch" and enter your branch name "add-YOURNAME-signature", then click "Create Branch."
+![](/assets/images/gh_desktop_branch2.png)
+* Right now, this branch only exists on your computer. Click "Publish Branch" to push it to GitHub.
+![](/assets/images/gh_desktop_branch3.png)
+* On the GitHub website, you should see your branch from the drop-down menu:
+![](/assets/images/github_branch_example.png)
 
 ## Sign the signatures.md Document
 
@@ -159,6 +170,8 @@ Branch add-dakotachambers-signature set up to track remote branch add-dakotacham
     * Notepad (Ships with Windows)
     * [VS Code](https://code.visualstudio.com/)
     * [Notepad++](https://notepad-plus-plus.org/)
+
+  ![](/assets/images/edit_signature_file.png)
   * You do *not* want to open this in software like Office. You need to preserve the plain-text format.
 * From the command line, you can simply enter this command to add your name to the bottom:
   * `$ echo "* john doe" >> signatures.md`
@@ -182,9 +195,17 @@ Congratulations! Git has now recorded this change to the file(s). These changes 
 
 ### Desktop App
 
-**TODO**
+* After you've saved your changes, switch back to the GitHub Desktop app. It should tell you there has been 1 file changed.
+![](/assets/images/gh_desktop_changed_file.png)
+* Make sure the file is checked :heavy_check_mark: in the project tree in the left pane. Add a *commit message* below.
+  * The small box is for a brief summary of your commit. Keep it to 50 characters max.
+  * The larger box is for a full commit message. You can use complete sentences and even style it in markdown.
+  * For simple commits, just a summary might be fine. For larger commits, you'll want to take the time to explain what you did.
+![](/assets/images/gh_desktop_commit_message.png)
 
 ## Push your Changes to GitHub
+
+* Your changes are now tracked in Git on your local machine. Next step is pushing your changes to GitHub.
 
 ### Command Line
 
@@ -193,7 +214,8 @@ Congratulations! Git has now recorded this change to the file(s). These changes 
 
 ### Desktop App
 
-**TODO**
+* The desktop app should recognize your local commit and ask you if you want to push it to a remote repository. In this case, and in most standard cases, the default remote repository is named `origin`. Press the "Push Origin" button.
+![](/assets/images/gh_desktop_commited_push_changes.png)
 
 ## Submit a Pull Request
 
@@ -201,13 +223,17 @@ Congratulations! You should see your change live on GitHub on the branch you cre
 
 **TODO - add images from GitHub**
 
-* Go to the [GitHub Repository](https://github.uwhealth.wisc.edu/serveradmins/learn-git) and click on the **Pull Requests** tab.
-* Select **New Pull Request**
+* Go to the [GitHub Repository on the website](https://github.uwhealth.wisc.edu/serveradmins/learn-git) and click on the **Pull Requests** tab, or click on the "Compare & Pull Request" button.
+![](/assets/images/gh_desktop_changes_pushed_to_remote.png)
+  * Select **New Pull Request**
 * Set the **base** branch as `master` - this is the branch that you are merging your changes *into*.
 * Set the **compare** branch as `<your-branch>` - this is the branch that already has changes in it you want to merge into the `master` branch.
+![](/assets/images/gh_desktop_pull_request.png)
 * Select **Create Pull Request**
 
 And you're done! At this point, the repository **maintainer** (For this repo, [Dakota](https://github.uwhealth.wisc.edu/dcc341)) will review your changes and **merge** your branch into the protected `master` branch.
+
+![](/assets/images/gh_desktop_merge_pr.png)
 
 ## Clean Up Local Git Repository
 
@@ -221,6 +247,10 @@ And you're done! At this point, the repository **maintainer** (For this repo, [D
 
 ### Desktop App
 
+* While you have the branch you want to delete checked out, go to the "Branch" dropdown menu and select "Delete Branch." Or just press CTRL+SHIFT+D.
+
+---
+
 :sparkler: **Congratulations!** :sparkler: You've passed the Git 101 tutorial! You're well on your way to becoming a Git superstar.
 
 ## Additional Resources
@@ -230,4 +260,4 @@ And you're done! At this point, the repository **maintainer** (For this repo, [D
 * [GitHub Help - github.com](https://help.github.com/) - The official help page from GitHub.
 * [Git 101 - Chambers.io](http://chambers.io/2018/04/07/git-week.html) - Shameless
   self plug. I wrote some stuff about how to use Git and how it works under the hood.
-* [Git Flight Rules](https://github.com/k88hudson/git-flight-rules) - A place to search for an exact command to enter based on your needs or problem.
+* [Git Flight Rules](https://github.com/k88hudson/git-flight-rules) - A list of Git "Flight Rules" to follow in any situation.
