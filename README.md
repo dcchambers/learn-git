@@ -18,9 +18,9 @@ Linux instructions.
 
 ## Contents
 0. [Configure GitHub and Git](#github-and-git-configuration)
-1. [Copy this Repository to your Local Machine](#check-out-this-repo)
+1. [Copy this Repository to your Local Machine](#clone-this-repo)
 2. [Create a Branch](#create-a-new-branch)
-3. [Sign the signatures.md document](#sign-the-readme-document)
+3. [Sign the signatures.md document](#sign-the-signatures.md-document)
 4. [Commit your Changes](#commit-your-changes)
 5. [Push Changes to GitHub](#push-your-changes-to-github)
 6. [Submit a Pull Request to Publish your Changes](#submit-a-pull-request)
