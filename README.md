@@ -1,5 +1,7 @@
 # Learn Git and GitHub!
 
+This is a (slightly modified) copy of a repo I created to help teach git at my workplace. I have tried to remove all the direct references to that org, but there may still be some mentions/screenshots of GitHub Enterprise since that is what we use. Fret not - you can follow this guide the exact same way using regular good 'ol `github.com`.
+
 A tutorial to help you learn Git! Follow the instructions below to learn how to
 use git and submit your first code change!
 
@@ -40,8 +42,7 @@ just one of several popular options for hosting remote git repositories.
 
 ### Set up your Account on GitHub
 
-* UW Health has an Enterprise GitHub instance running at https://github.uwhealth.wisc.edu
-  * Sign in with your regular AD account.
+* Head over to [GitHub](https://github.com) (you're probably here already!) and create a free account if you have't done that yet.
 
 ### Install and Configure Git Locally
 
@@ -62,12 +63,9 @@ just one of several popular options for hosting remote git repositories.
 * There are two ways to use git with a remote repository host - git-over-ssh
 and git-over-http(s). When you clone a repo from GitHub, you can normally choose
 either method.
-  * Git-over-http(s) is disabled for the UW Health Enterprise GitHub Service.
-  You *must* use git-over-SSH.
-  * To do this, you'll have to generate a **SSH Key** and add the public key to
-  your account.
-  * By using SSH-keys, you won't have to enter your login credentials every time
-  you push/pull something to/from GitHub.
+  * For git-over-SSH, you'll have to generate a **SSH Key** and add the public key to your account.
+    * By using SSH-keys, you won't have to enter your login credentials every time you push/pull something to/from GitHub.
+  * If you use git-over-https, you won't have to add your SSH key but you'll have to log in with your credentials with every push.
 
 #### Linux/Mac
 
@@ -96,12 +94,17 @@ It is pretty good for working with repositories hosted on GitHub, but it is not 
 
 ## Clone This Repo
 
+Since you are not the *owner* of this repository, or listed as an approved *collaborator* - you'll have to [**fork**](https://help.github.com/en/articles/fork-a-repo) this repo into your own repo (it will be an identical copy, it will just be yours!)
+
+Click the **fork** button on the top left of [this repository homepage.](https://github.com/dcchambers/learn-git)
+![](/assets/images/gh_fork.png)
+
 ### Command Line
 
 * Change into the directory where you want to keep your repositories.
 `$ cd ~/Development`
 * Clone this repository.
-` ~/Development $ git clone git@github.uwhealth.wisc.edu:serveradmins/learn-git.git`
+` ~/Development $ git clone git@github.com:<YOUR USERNAME>/learn-git.git`
 * You should see Git download the repo and a subdirectory should be created.
 ```
 ~/Development $ ls
@@ -119,9 +122,9 @@ assets/ .gitignore README.md signatures.md
 
 * Open the GitHub Desktop App and go to File --> Clone Repository (CTRL + SHIFT + O)
 ![](/assets/images/gh_desktop_clone_repo.png)
-* Click on the "Enterprise" tab and navigate to the `learn-git` repo.
+* Click on the `URL` tab and enter `<YOUR USERNAME>/learn-git`
   * Enter the path on your local machine where you want the project saved. I would recommend not saving it on the hard drive itself and not on a network drive - you want to be able to use this offline!
-![](/assets/images/gh_desktop_clone_repo2.png)
+![](/assets/images/gh_desktop_clone_learngit.jpg)
 * You should see this as it clones the repo from GitHub to your local project directory.
 ![](/assets/images/gh_desktop_clone_repo3.png)
 
@@ -149,7 +152,7 @@ nothing to commit, working directory clean
 ```
 $ git push -u origin add-dakotachambers-signature
 ...
-To git@github.uwhealth.wisc.edu:serveradmins/learn-git.git
+To git@github.com/dcchambers/learn-git.git
  * [new branch]      add-dakotachambers-signature -> add-dakotachambers-signature
 Branch add-dakotachambers-signature set up to track remote branch add-dakotachambers-signature from origin.
 ```
@@ -228,7 +231,7 @@ Congratulations! Git has now recorded this change to the file(s). These changes 
 
 Congratulations! You should see your change live on GitHub on the branch you created. Almost done! The next step is to create a `pull request` to merge your changes into the `master` branch.
 
-* Go to the [GitHub Repository on the website](https://github.uwhealth.wisc.edu/serveradmins/learn-git) and click on the **Pull Requests** tab, or click on the "Compare & Pull Request" button.
+* Go to the [GitHub Repository on the website](https://github.com/dcchambers/learn-git) and click on the **Pull Requests** tab, or click on the "Compare & Pull Request" button.
 ![](/assets/images/gh_desktop_changes_pushed_to_remote.png)
   * Select **New Pull Request**
 * Set the **base** branch as `master` - this is the branch that you are merging your changes *into*.
@@ -236,7 +239,7 @@ Congratulations! You should see your change live on GitHub on the branch you cre
 ![](/assets/images/gh_desktop_pull_request.png)
 * Select **Create Pull Request**
 
-And you're done! At this point, the repository **maintainer** (For this repo, [Dakota](https://github.uwhealth.wisc.edu/dcc341)) will review your changes and **merge** your branch into the protected `master` branch.
+And you're done! At this point, the repository **maintainer** (For this repo, [Dakota](https://github.com/dcchambers)) will review your changes and **merge** your branch into the protected `master` branch.
 
 ![](/assets/images/gh_desktop_merge_pr.png)
 
