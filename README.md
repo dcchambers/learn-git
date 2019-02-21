@@ -244,6 +244,9 @@ And you're done! At this point, the repository **maintainer** (For this repo, [D
 
 * Whenever you're ready (after your changes are approved and merged) you can clean up your local Git repository.
 
+* After your PR (Pull Request) is accepted and your changes have been merged, you can delete the branch on GitHub. Your repo/project maintainer may do this as well.
+![](/assets/images/gh_delete_branch.png)
+
 ### Command Line
 * Check out the `master` branch: `$ git checkout master`
 * Pull the latest changes from GitHub: `$ git pull`
@@ -253,6 +256,8 @@ And you're done! At this point, the repository **maintainer** (For this repo, [D
 ### Desktop App
 
 * While you have the branch you want to delete checked out, go to the "Branch" dropdown menu and select "Delete Branch." Or just press CTRL+SHIFT+D.
+
+![](/assets/images/gh_desktop_delete_branch.png)
 
 ---
 
