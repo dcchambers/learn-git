@@ -17,17 +17,17 @@ Linux instructions.
   * Git is not included with Windows - but there are several ways to easily install it.
 
 ## Contents
-0. [Configure GitHub and Git](#step_0\:_github-and-git-configuration)
-1. [Copy this Repository to your Local Machine](#step_1:_check-out-this-repo)
-2. [Create a Branch](#step_2:_create-a-new-branch)
-3. [Sign the signatures.md document](#step_3:_sign-the-readme-document)
-4. [Commit your Changes](#step_4:_commit-your-changes)
-5. [Push Changes to GitHub](#step_5:_push-your-changes-to-github)
-6. [Submit a Pull Request to Publish your Changes](#step_6:_submit-a-pull-request)
-7. [Clean Up Local Git Repository](#step_7:_clean-up-local-git-repository)
+0. [Configure GitHub and Git](#github-and-git-configuration)
+1. [Copy this Repository to your Local Machine](#check-out-this-repo)
+2. [Create a Branch](#create-a-new-branch)
+3. [Sign the signatures.md document](#sign-the-readme-document)
+4. [Commit your Changes](#commit-your-changes)
+5. [Push Changes to GitHub](#push-your-changes-to-github)
+6. [Submit a Pull Request to Publish your Changes](#submit-a-pull-request)
+7. [Clean Up Local Git Repository](#clean-up-local-git-repository)
 8. [Additional Resources](#additional-resources)
 
-## Step 0: GitHub and Git Configuration
+## GitHub and Git Configuration
 
 Before you begin, you'll want to make sure your GitHub Account is set up
 and configure Git (the software) on your local machine.
@@ -87,7 +87,7 @@ It is pretty good for working with repositories hosted on GitHub, but it is not 
 
 * This guide will include instructions for working with both the command line and with the GitHub desktop app.
 
-## Step 1: Clone This Repo
+## Clone This Repo
 
 ### Command Line
 
@@ -119,7 +119,7 @@ assets/ .gitignore README.md signatures.md
 ![](/assets/images/gh_desktop_clone_repo3.png)
 
 
-## Step 2: Create a New Branch
+## Create a New Branch
 
 :question: Why create a new branch? After you clone the repo, you are probably on the default `master` branch. It's bad practice to commit changes directly to the`master` branch in a shared repository. It's better to create a `feature-branch` and safely make your changes there.
 
@@ -160,7 +160,7 @@ Branch add-dakotachambers-signature set up to track remote branch add-dakotacham
 * On the GitHub website, you should see your branch from the drop-down menu:
 ![](/assets/images/github_branch_example.png)
 
-## Step 3: Sign the signatures.md Document
+## Sign the signatures.md Document
 
 * Add your signature to the bottom of the `signatures.md` document.
 * Nothing tricky about this step. A file that ends in `.md` is a *markdown* file - it's a plain text document that can do some fancy rendering (into HTML, PDF, e tc). Open and edit the file in your favorite text editor.
@@ -176,7 +176,7 @@ Branch add-dakotachambers-signature set up to track remote branch add-dakotacham
 * From the command line, you can simply enter this command to add your name to the bottom:
   * `$ echo "* john doe" >> signatures.md`
 
-## Step 4: Commit your Changes
+## Commit your Changes
 
 ### Command Line
 
@@ -203,7 +203,7 @@ Congratulations! Git has now recorded this change to the file(s). These changes 
   * For simple commits, just a summary might be fine. For larger commits, you'll want to take the time to explain what you did.
 ![](/assets/images/gh_desktop_commit_message.png)
 
-## Step 5: Push your Changes to GitHub
+## Push your Changes to GitHub
 
 * Your changes are now tracked in Git on your local machine. Next step is pushing your changes to GitHub.
 
@@ -217,7 +217,7 @@ Congratulations! Git has now recorded this change to the file(s). These changes 
 * The desktop app should recognize your local commit and ask you if you want to push it to a remote repository. In this case, and in most standard cases, the default remote repository is named `origin`. Press the "Push Origin" button.
 ![](/assets/images/gh_desktop_commited_push_changes.png)
 
-## Step 6: Submit a Pull Request
+## Submit a Pull Request
 
 Congratulations! You should see your change live on GitHub on the branch you created. Almost done! The next step is to create a `pull request` to merge your changes into the `master` branch.
 
@@ -235,7 +235,7 @@ And you're done! At this point, the repository **maintainer** (For this repo, [D
 
 ![](/assets/images/gh_desktop_merge_pr.png)
 
-## Step 7: Clean Up Local Git Repository
+## Clean Up Local Git Repository
 
 * Whenever you're ready (after your changes are approved and merged) you can clean up your local Git repository.
 
