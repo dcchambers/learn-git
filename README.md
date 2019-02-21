@@ -20,7 +20,7 @@ Linux instructions.
 0. [Configure GitHub and Git](#github-and-git-configuration)
 1. [Copy this Repository to your Local Machine](#clone-this-repo)
 2. [Create a Branch](#create-a-new-branch)
-3. [Sign the signatures.md document](#sign-the-signatures.md-document)
+3. [Sign the signatures.md document](#sign-the-document)
 4. [Commit your Changes](#commit-your-changes)
 5. [Push Changes to GitHub](#push-your-changes-to-github)
 6. [Submit a Pull Request to Publish your Changes](#submit-a-pull-request)
@@ -55,6 +55,9 @@ just one of several popular options for hosting remote git repositories.
 
 #### Windows
 
+* Download [Git for Windows](https://git-scm.com/download/win). This also incude Git-Bash - a command line tool for working with Git and unleashing its full power.
+  * :heavy_exclamation_mark: If you are using the [GitHub Desktop App](https://desktop.github.com/) - you don't actually need to install Git manually - but I would still recommend it to learn the command line tools.
+
 ### Add SSH Key to GitHub.
 * There are two ways to use git with a remote repository host - git-over-ssh
 and git-over-http(s). When you clone a repo from GitHub, you can normally choose
@@ -70,18 +73,22 @@ either method.
 
 * Follow the instructions [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 to generate a SSH key using `ssh-keygen`.
-
 * Follow the instructions [here](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 to add the SSH **public** key (id_rsa.pub) to your GitHub account.
 
 #### Windows
 
-**TODO**
+* Follow the instructions [here](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to generate a SSH key in Windows. These steps require you have [Git and Git-bash](https://git-scm.com/download/win) installed.
+  * :heavy_exclamation_mark: If you are using the [GitHub Desktop App](https://desktop.github.com/) - you don't actually need to install Git manually - but I would still recommend it to learn the command line tools.
+  * Follow the instructions [here](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+  to add the SSH **public** key (id_rsa.pub) to your GitHub account.
+
 
 ### Desktop/GUI Applications
 
 GitHub provides [a desktop app](https://desktop.github.com/) for Windows and Mac systems.
 It is pretty good for working with repositories hosted on GitHub, but it is not the only desktop app available for working with Git.
+  * :heavy_exclamation_mark: If you are using the GitHub Desktop App, you can sign in with your GitHub Enterprise credentials directly and skip a lot of the setup steps.
 
 [Here's an extensive but non-exhaustive list](https://git-scm.com/download/guis) of desktop apps for working with Git.
 
@@ -160,7 +167,7 @@ Branch add-dakotachambers-signature set up to track remote branch add-dakotacham
 * On the GitHub website, you should see your branch from the drop-down menu:
 ![](/assets/images/github_branch_example.png)
 
-## Sign the signatures.md Document
+## Sign the Document
 
 * Add your signature to the bottom of the `signatures.md` document.
 * Nothing tricky about this step. A file that ends in `.md` is a *markdown* file - it's a plain text document that can do some fancy rendering (into HTML, PDF, e tc). Open and edit the file in your favorite text editor.
@@ -220,8 +227,6 @@ Congratulations! Git has now recorded this change to the file(s). These changes 
 ## Submit a Pull Request
 
 Congratulations! You should see your change live on GitHub on the branch you created. Almost done! The next step is to create a `pull request` to merge your changes into the `master` branch.
-
-**TODO - add images from GitHub**
 
 * Go to the [GitHub Repository on the website](https://github.uwhealth.wisc.edu/serveradmins/learn-git) and click on the **Pull Requests** tab, or click on the "Compare & Pull Request" button.
 ![](/assets/images/gh_desktop_changes_pushed_to_remote.png)
